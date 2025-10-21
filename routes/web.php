@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PelangganController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -60,5 +61,10 @@ Route::get('/matakuliah/show/{kode?}', [MatakuliahController::class, 'show']);
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
 
+Route::get('/pelanggan', [PelangganController::class, 'index'])->name('pelanggan.list');
 
+Route::get('/pelanggan/create', [PelangganController::class, 'create'])->name('pelanggan.create');
 
+Route::get('/pelanggan/store', [PelangganController::class, 'store'])->name('pelanggan.store');
+
+Route::post('/pelanggan/store', [PelangganController::class, 'store'])->name('pelanggan.store');
