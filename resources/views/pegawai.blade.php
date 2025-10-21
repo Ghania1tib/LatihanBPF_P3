@@ -6,7 +6,12 @@
     <title>Data Pegawai</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+<<<<<<< HEAD
         .container { max-width: 600px; margin: 0 auto; background: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+=======
+        .container { max-width: 600px; margin: 0 auto; background:
+        #aaedd4; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+>>>>>>> 08c1f443348ecb0627b517b6dd725a98129ee0dd
         h1 { color: #333; }
         ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; }

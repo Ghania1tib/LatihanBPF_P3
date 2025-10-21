@@ -4,18 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MahasiswaController extends Controller
+class MatakuliahController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-<<<<<<< HEAD
-        
-=======
-        //
->>>>>>> 08c1f443348ecb0627b517b6dd725a98129ee0dd
+        return "Menampilkan data matakuliah";
     }
 
     /**
@@ -37,18 +33,12 @@ class MahasiswaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $param1)
+    public function show($kode = null)
     {
-        if($param1 == 'detail'){
-<<<<<<< HEAD
-            return view('halaman-mahasiswa-detail');
-        }else if ($param1 == 'profil'){
-            return view('halaman-mahasiswa-profil');
-=======
-            return view ('halaman-mahasiswa-detail');
-        } else if ($param1 == 'profil'){
-            return view ('halaman-mahasiswa-profil');
->>>>>>> 08c1f443348ecb0627b517b6dd725a98129ee0dd
+        if ($kode) {
+            return "Anda mengakses matakuliah " . strtoupper($kode);
+        } else {
+            return "Masukkan kode matakuliah!";
         }
     }
 
